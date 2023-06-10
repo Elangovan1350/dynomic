@@ -18,7 +18,7 @@ function App() {
     return (
         <main className='App'>
             <h1>Pokedex</h1>
-            <div>
+            <div className='grid grid-cols-3 gap-5'>
                 {data.map((data) => (
                     <div key={data.id}>
                         <>
