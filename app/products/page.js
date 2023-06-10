@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import useSWR from 'swr'
@@ -20,7 +21,13 @@ function App() {
             <div>
                 {data.map((data) => (
                     <div key={data.id}>
+                        <>
                         <Link href={`/products/${data.id}`}>{data.title}</Link>
+                        <Link href={`/products/${data.id}`}>
+                        <Image src={`${data.image}`} alt='efff' height={200} width={200} />
+                        </Link>
+                        </>
+
                     </div>
                 ))}
             </div>
