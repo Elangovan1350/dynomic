@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import useSWR from "swr";
+import {BounceLoader} from "react-spinners"
 
 const url = "https://fakestoreapi.com/products";
 
@@ -12,7 +13,7 @@ const Pro = ({ params }) => {
   console.log(data);
 
   if (error) return <h1>Something went wrong!</h1>;
-  if (!data) return <h1>Loading...</h1>;
+  if (!data) return <h1 className="h-screen w-screen flex items-center justify-center"><BounceLoader size={100} /></h1>;
 
   return (
     <div className="flex justify-center items-center flex-col h-screen max-w-3xl m-auto">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import useSWR from "swr";
+import {DotLoader} from "react-spinners"
 
 const url = "https://fakestoreapi.com/products";
 
@@ -13,12 +14,12 @@ function App() {
   console.log(data);
 
   if (error) return <h1>Something went wrong!</h1>;
-  if (!data) return <h1>Loading...</h1>;
+  if (!data) return <h1 className="h-screen w-screen flex items-center justify-center"><DotLoader size={100}/></h1>;
 
   return (
     <main className="App">
       <h1>Pokedex</h1>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {data.map((data) => (
           <div key={data.id}>
             <div className="flex justify-center items-center flex-col">
