@@ -26,15 +26,15 @@ function App() {
       <h1>Pokedex</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {data.map((data) => (
-          <div key={data.id}>
+          <div key={data._id}>
             <div className="flex justify-center items-center flex-col">
               <Link
-                href={`/products/${data.id}`}
+                href={`/products/${data._id}`}
                 className="text-xl font-bold text-center"
               >
                 {data.title}
               </Link>
-              <Link href={`/products/${data.id}`}>
+              <Link href={`/products/${data._id}`}>
                 <div className="h-60  flex items-center justify-center overflow-hidden">
                   <Image
                     src={`${data.image}`}
