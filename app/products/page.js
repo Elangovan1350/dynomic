@@ -5,7 +5,7 @@ import React from "react";
 import useSWR from "swr";
 import { DotLoader } from "react-spinners";
 
-const url = "https://fakestoreapi.com/products";
+const url = "https://expressapi-u55r.onrender.com";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
