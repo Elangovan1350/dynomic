@@ -8,8 +8,8 @@ const url = "https://expressapi-u55r.onrender.com";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const Pro = ({ params }) => {
-  const { _id } = params;
-  const { data, error } = useSWR(`${url}/${_id}`, fetcher);
+  const { id } = params;
+  const { data, error } = useSWR(`${url}/${id}`, fetcher);
   console.log(params);
 
   if (error) return <h1>Something went wrong!</h1>;
