@@ -10,7 +10,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 const Pro = ({ params }) => {
   const { _id } = params;
   const { data, error } = useSWR(`${url}/${_id}`, fetcher);
-  console.log(data);
+  console.log(params);
 
   if (error) return <h1>Something went wrong!</h1>;
   if (!data)
