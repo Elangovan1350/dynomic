@@ -17,6 +17,7 @@ const Form = () => {
     })
      
     const handleInput =(e)=>{
+        e.preventDefault()
         const{name , value} = e.target 
         setData({...data ,[name]:value})
         setData({...data.rating ,[name]:value})
@@ -24,6 +25,7 @@ const Form = () => {
 
     const sendData = ()=>{
         axios.post("https://newapi-d478.onrender.com",data).then(res=>console.log("data saved"))
+        console.log(data)
     }
 
   
