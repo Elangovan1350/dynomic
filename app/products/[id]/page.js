@@ -26,8 +26,8 @@ const Pro = ({ params }) => {
       <Image src={`${data.image}`} alt="efff" height={200} width={200} />
       <h3 className="text-xl font-semibold">Price: ${data.price}</h3>
       <h2 className="text-lg font-medium">{data.description}</h2>
-      <p className="text-base font-medium">Rating:{data.rating.rate}</p>
-      <p className="text-base font-medium">Total Sales : {data.rating.count}</p>
+      {/* <p className="text-base font-medium">Rating:{data.rating.rate}</p>
+      <p className="text-base font-medium">Total Sales : {data.rating.count}</p> */}
     </div>
   );
 };

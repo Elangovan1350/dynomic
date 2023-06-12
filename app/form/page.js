@@ -10,10 +10,10 @@ const Form = () => {
     image: "",
     description: "",
     category: "",
-    rating: {
-      count: 0,
-      rate: 0,
-    },
+    // rating: {
+    //   count: 0,
+    //   rate: 0,
+    // },
   });
 
   const handleInput = (e) => {
@@ -64,7 +64,7 @@ const Form = () => {
             placeholder="category"
             onChange={handleInput}
           />
-          <input
+          {/* <input
             type="number"
             name="count"
             placeholder="count"
@@ -75,7 +75,7 @@ const Form = () => {
             name="rate"
             placeholder="rate"
             onChange={handleInput}
-          />
+          /> */}
           <button
             onClick={sendData}
             className="text-2xl font-bold bg-blue-400 px-10 py-3 mb-10 rounded-lg"
