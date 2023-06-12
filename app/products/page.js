@@ -4,7 +4,7 @@ import Link from "next/link";
 import useSWR from "swr";
 import { DotLoader } from "react-spinners";
 
-const url = "https://expressapi-u55r.onrender.com";
+const url = "https://newapi-d478.onrender.com";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 

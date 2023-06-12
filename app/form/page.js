@@ -22,8 +22,8 @@ const Form = () => {
         setData({...data.rating ,[name]:value})
     }
 
-    const sendData = async()=>{
-       await axios.post("https://newapi-vyhd.onrender.com",data)
+    const sendData = ()=>{
+        axios.post("https://newapi-d478.onrender.com",data).then(res=>console.log("data saved"))
     }
 
   
