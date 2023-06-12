@@ -17,7 +17,6 @@ const Form = () => {
   });
 
   const handleInput = (e) => {
-    e.preventDefault();
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
     setData({ ...data.rating, [name]: value });
