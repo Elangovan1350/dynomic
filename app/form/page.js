@@ -32,8 +32,8 @@ const Form = () => {
 
   return (
     <div className="min-h-screen flex justify-center items-center">
-      <div className="w-5/6 h-fit bg-slate-600 p-40">
-        <form action="" className="flex flex-col gap-5">
+      <div className="w-5/6 h-fit bg-slate-600 p-40 flex justify-center items-center">
+        <form action="" className="flex flex-col gap-5 w-80">
           <input
             type="text"
             name="title"
@@ -59,6 +59,7 @@ const Form = () => {
             onChange={handleInput}
           />
           <input
+          
             type="text"
             name="category"
             placeholder="category"
