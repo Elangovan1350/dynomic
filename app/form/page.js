@@ -19,7 +19,6 @@ const Form = () => {
   const handleInput = (e) => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
-    setData({ ...data.rating, [name]: value });
   };
 
   const sendData = (e) => {
